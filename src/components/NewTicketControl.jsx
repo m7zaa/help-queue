@@ -4,6 +4,7 @@ import NewTicketForm from './NewTicketForm';
 import PropTypes from 'prop-types';
 
 class NewTicketControl extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -12,8 +13,8 @@ class NewTicketControl extends React.Component {
     this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
 
-  handleTroubleshootingConfirmation() {
-    this.setState({ formVisibleOnPage: true });
+  handleTroubleshootingConfirmation(){
+    this.setState({formVisibleOnPage: true});
   }
 
   render(){
@@ -30,6 +31,7 @@ class NewTicketControl extends React.Component {
     );
   }
 }
+
 NewTicketControl.propTypes = {
   onNewTicketCreation: PropTypes.func
 };
